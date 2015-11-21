@@ -1,4 +1,4 @@
-FROM microsoft/aspnet:1.0.0-beta4
+FROM microsoft/aspnet:1.0.0-rc1-final
 
 COPY . /app
 
@@ -6,4 +6,4 @@ WORKDIR /app
 
 RUN ["dnu", "restore"]
 
-ENTRYPOINT ["dnx", ".", "run"]
+ENTRYPOINT ["dnx", "run"]
